@@ -1,5 +1,6 @@
 # KiCad autosave / backup
 Gerbs/
+production/
 *-backups/
 *.bak
 *.tmp
