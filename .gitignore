@@ -8,3 +8,6 @@ production/
 *.kicad_sch-bak
 *.kicad_pcb-bak
 .fp-info-cache
+# KiCad lock files
+*.lck
+~*.lck
