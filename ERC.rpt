@@ -1,0 +1,22 @@
+ERC report (2026-01-09T00:33:24-0500, Encoding UTF8)
+
+***** Sheet /
+[pin_to_pin]: Pins of type Power output and Power output are connected
+    ; error
+    @(3500 mils, 1400 mils): Symbol U1 Pin 5 [VOUT, Power output, Line]
+    @(4700 mils, 2400 mils): Symbol U7 Pin 4 [V3, Power output, Line]
+[pin_to_pin]: Pins of type Power output and Power output are connected
+    ; error
+    @(4300 mils, 1550 mils): Symbol #FLG02 Pin 1 [Power output, Line]
+    @(3500 mils, 1400 mils): Symbol U1 Pin 5 [VOUT, Power output, Line]
+[lib_symbol_mismatch]: Symbol 'USB_C_Receptacle_USB2.0_16P' doesn't match copy in library 'Connector'
+    ; warning
+    @(1450 mils, 3200 mils): Symbol J7 [USB_C_Receptacle_USB2.0_16P]
+[no_connect_dangling]: Unconnected "no connection" flag
+    ; warning
+    @(4550 mils, 3100 mils): No Connect
+[lib_symbol_mismatch]: Symbol 'CH340C' doesn't match copy in library 'Interface_USB'
+    ; warning
+    @(4700 mils, 3000 mils): Symbol U7 [CH340C]
+
+ ** ERC messages: 5  Errors 2  Warnings 3
