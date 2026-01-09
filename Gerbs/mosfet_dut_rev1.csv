@@ -1,0 +1,16 @@
+"Id";"Designator";"Footprint";"Quantity";"Designation";"Supplier and ref";
+1;"C10,C8,C5,C6,C7";"C_0603_1608Metric";5;"0.1uF";;;
+2;"C4,C3";"C_0603_1608Metric";2;"470n";;;
+3;"J2";"TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal";1;"Conn";;;
+4;"R2,R11,R5,R4,R1,R3,R6,R10,R8,R9";"R_0603_1608Metric";10;"5k1";;;
+5;"U2";"SOT-23-6";1;"USBLC6-2SC6";;;
+6;"J3,J4,J6,J5";"TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal";4;"Conn_01x02";;;
+7;"U1";"SOT-23-5";1;"AP2112K-3.3";;;
+8;"C1,C2";"C_0603_1608Metric";2;"1u";;;
+9;"Q3,Q1,Q4,Q2";"SOT-23";4;"AO3400A";;;
+10;"U6";"ESP32-WROOM-32E";1;"ESP32-WROOM-32E";;;
+11;"R7";"R_2512_6332Metric";1;"0.1";;;
+12;"U4";"SOIC-8_3.9x4.9mm_P1.27mm";1;"INA219AxD";;;
+13;"U7";"SOIC-16_3.9x9.9mm_P1.27mm";1;"CH340C";;;
+14;"J7";"USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal";1;"USB_C_Receptacle_USB2.0_16P";;;
+15;"C9";"C_0603_1608Metric";1;"1uF";;;
