@@ -7,8 +7,10 @@
 	(title_block
 		(title "ESP32 MOSFET DUT")
 		(date "2026-01-06")
-		(rev "1.0")
+		(rev "1.1")
 		(company "Hardware Gunner")
+		(comment 1 "1.1 Swapping to basic jlcpcb parts")
+		(comment 2 "APK2112K-3.3 -> ME6211C33M5")
 	)
 	(lib_symbols
 		(symbol "Connector:USB_C_Receptacle_USB2.0_16P"
@@ -3115,6 +3117,177 @@
 					(at 7.62 2.54 180)
 					(length 2.54)
 					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Regulator_Linear:ME6211C33M5"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -4.572 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "ME6211C33M5"
+				(at 10.16 8.636 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+				(at -0.508 -13.462 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_MICRONE-Nanjing-Micro-One-Elec-ME6211C33R5G_C235316.pdf"
+				(at 0.254 -17.018 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "500mA low dropout linear regulator, shutdown pin, 6.5V max input voltage, 3.3V fixed positive output, SOT-23-5"
+				(at 1.778 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "linear regulator ldo fixed positive"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23?5*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "ME6211C33M5_1_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "V_{IN}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "CE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "V_{SS}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 5.08 0 180)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "V_{OUT}"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6655,6 +6828,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Linear:ME6211C33M5")
+		(at 106.68 21.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "12e7d9bf-0aeb-4ed3-8303-9fc39e30811b")
+		(property "Reference" "U3"
+			(at 106.68 11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ME6211C33M5"
+			(at 106.68 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 106.172 35.052 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_MICRONE-Nanjing-Micro-One-Elec-ME6211C33R5G_C235316.pdf"
+			(at 106.934 38.608 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "500mA low dropout linear regulator, shutdown pin, 6.5V max input voltage, 3.3V fixed positive output, SOT-23-5"
+			(at 108.458 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "3f5c4eae-79fb-4875-b92e-2ab8a3abeb3c")
+		)
+		(pin "3"
+			(uuid "bb3cd691-be63-4628-9736-37fc1570798f")
+		)
+		(pin "1"
+			(uuid "01b1a20f-0e2a-4858-8bed-52282b971a98")
+		)
+		(pin "2"
+			(uuid "e55c94f9-12e0-496b-89e6-16457f845a6a")
+		)
+		(pin "5"
+			(uuid "019bd037-f867-484c-8a6e-93f476b49d6f")
+		)
+		(instances
+			(project ""
+				(path "/deac0eab-811f-4736-96ff-e9a031bd3138"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 109.22 33.02 0)
 		(unit 1)
@@ -7080,7 +7330,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 78.74 119.38 0)
+		(at -13.97 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -7089,7 +7339,7 @@
 		(fields_autoplaced yes)
 		(uuid "333af0bc-3913-416f-aefa-a7b7e58ed0c3")
 		(property "Reference" "H2"
-			(at 81.28 118.1099 0)
+			(at -11.43 24.1299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7098,7 +7348,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 81.28 120.6499 0)
+			(at -11.43 26.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7107,7 +7357,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
-			(at 78.74 119.38 0)
+			(at -13.97 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7116,7 +7366,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 78.74 119.38 0)
+			(at -13.97 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7125,7 +7375,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 78.74 119.38 0)
+			(at -13.97 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8697,7 +8947,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 78.74 114.3 0)
+		(at -13.97 20.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -8706,7 +8956,7 @@
 		(fields_autoplaced yes)
 		(uuid "71933bbc-d03b-4bd3-a391-fa028e0f432e")
 		(property "Reference" "H1"
-			(at 81.28 113.0299 0)
+			(at -11.43 19.0499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8715,7 +8965,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 81.28 115.5699 0)
+			(at -11.43 21.5899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8724,7 +8974,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
-			(at 78.74 114.3 0)
+			(at -13.97 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8733,7 +8983,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 78.74 114.3 0)
+			(at -13.97 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8742,7 +8992,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 78.74 114.3 0)
+			(at -13.97 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9110,7 +9360,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 78.74 124.46 0)
+		(at -13.97 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -9119,7 +9369,7 @@
 		(fields_autoplaced yes)
 		(uuid "877dbfb2-102f-4cbe-9bef-e6942a0fe73f")
 		(property "Reference" "H3"
-			(at 81.28 123.1899 0)
+			(at -11.43 29.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9128,7 +9378,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 81.28 125.7299 0)
+			(at -11.43 31.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9137,7 +9387,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
-			(at 78.74 124.46 0)
+			(at -13.97 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9146,7 +9396,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 78.74 124.46 0)
+			(at -13.97 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9155,7 +9405,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 78.74 124.46 0)
+			(at -13.97 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10504,7 +10754,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 78.74 129.54 0)
+		(at -13.97 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -10513,7 +10763,7 @@
 		(fields_autoplaced yes)
 		(uuid "e1b6cf3c-1b45-4e0e-93a9-e06d0e8f5d3d")
 		(property "Reference" "H4"
-			(at 81.28 128.2699 0)
+			(at -11.43 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10522,7 +10772,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 81.28 130.8099 0)
+			(at -11.43 36.8299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10531,7 +10781,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
-			(at 78.74 129.54 0)
+			(at -13.97 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10540,7 +10790,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 78.74 129.54 0)
+			(at -13.97 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10549,7 +10799,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 78.74 129.54 0)
+			(at -13.97 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
