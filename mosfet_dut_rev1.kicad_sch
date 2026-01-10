@@ -4603,6 +4603,12 @@
 		(uuid "371143bf-78c2-46eb-bf21-3a48e16a92a4")
 	)
 	(junction
+		(at 176.53 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3c307faf-216c-4265-ab3a-e1ff64dc9d71")
+	)
+	(junction
 		(at 46.99 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4685,12 +4691,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7ad10f85-d9dc-4812-952c-47d1bb47e475")
-	)
-	(junction
-		(at 176.53 129.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8eaa5f35-763f-47b1-8c2c-7fbc745fa37d")
 	)
 	(junction
 		(at 191.77 123.19)
@@ -8466,7 +8466,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
 			(at 247.65 94.615 0)
 			(effects
 				(font
@@ -8607,7 +8607,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 			(at 265.43 59.69 0)
 			(effects
 				(font
@@ -8741,7 +8741,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
 			(at 246.38 114.935 0)
 			(effects
 				(font
@@ -9061,94 +9061,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Sensor_Energy:INA219AxD")
-		(at 176.53 139.7 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "40012e69-bcb6-4c53-bb75-1ee01e593732")
-		(property "Reference" "U4"
-			(at 178.6733 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "INA219AxD"
-			(at 178.6733 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 196.85 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ina219.pdf"
-			(at 185.42 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Zero-Drift, Bidirectional Current/Power Monitor (0-26V) With I2C Interface, SOIC-8"
-			(at 176.53 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "6127040c-41dd-4503-96d8-5b59cf8ee622")
-		)
-		(pin "7"
-			(uuid "ae95a569-33e8-4cda-8b51-3365dfa3f3c5")
-		)
-		(pin "3"
-			(uuid "081a3906-ae2d-4457-8a8b-e9a6117d3bee")
-		)
-		(pin "2"
-			(uuid "fbd43042-9959-49f1-a5ad-e3a37cadceb9")
-		)
-		(pin "5"
-			(uuid "5291a31a-305f-48d3-90ca-44138257af9a")
-		)
-		(pin "4"
-			(uuid "fad7e612-4259-4646-98e6-b2d78d237ae1")
-		)
-		(pin "8"
-			(uuid "ed0eec72-ae39-4315-b829-6ea349bbfa05")
-		)
-		(pin "1"
-			(uuid "55ae25ed-ac3a-44d7-b26b-4f67530489ff")
-		)
-		(instances
-			(project ""
-				(path "/deac0eab-811f-4736-96ff-e9a031bd3138"
-					(reference "U4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 87.63 168.91 0)
 		(mirror x)
@@ -9253,7 +9165,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
 			(at 248.92 50.165 0)
 			(effects
 				(font
@@ -9800,7 +9712,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 59.3852 27.94 0)
 			(effects
 				(font
@@ -10256,7 +10168,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 			(at 265.43 95.25 0)
 			(effects
 				(font
@@ -10503,7 +10415,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
 			(at 247.65 73.025 0)
 			(effects
 				(font
@@ -11117,7 +11029,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 			(at 265.43 73.66 0)
 			(effects
 				(font
@@ -11317,7 +11229,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 			(at 265.43 116.84 0)
 			(effects
 				(font
@@ -11880,6 +11792,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Sensor_Energy:INA219AxD")
+		(at 176.53 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bdb62c77-94e8-4321-80b8-b2ab54154c53")
+		(property "Reference" "U4"
+			(at 178.6733 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "INA219AxD"
+			(at 178.6733 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 196.85 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ina219.pdf"
+			(at 185.42 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zero-Drift, Bidirectional Current/Power Monitor (0-26V) With I2C Interface, SOIC-8"
+			(at 176.53 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "859488e1-f5a1-4903-8e2e-292af9b05249")
+		)
+		(pin "6"
+			(uuid "d392e171-a7b4-4214-adf7-46b6d5d70f43")
+		)
+		(pin "3"
+			(uuid "0d12a80e-5aa2-40c1-8f1a-cd4e25050c22")
+		)
+		(pin "5"
+			(uuid "fcd4b53b-f6c6-42a9-ab03-187d5e2cc831")
+		)
+		(pin "4"
+			(uuid "be429110-0a17-4b6f-b93c-6376c62d4b07")
+		)
+		(pin "1"
+			(uuid "2781c9c3-c9c7-4a88-a71c-50e16f2ba158")
+		)
+		(pin "8"
+			(uuid "9d14e59e-255f-4a10-8d52-55c6a6b8fb4e")
+		)
+		(pin "2"
+			(uuid "f0e42143-e7d0-436a-ae8e-1073e4d99245")
+		)
+		(instances
+			(project ""
+				(path "/deac0eab-811f-4736-96ff-e9a031bd3138"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 72.39 168.91 0)
 		(mirror x)
@@ -12128,7 +12128,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-16_3.9x9.9mm_P1.27mm"
 			(at 77.47 139.7 0)
 			(effects
 				(font
@@ -12147,6 +12147,15 @@
 			)
 		)
 		(property "Description" "8-channel analog multiplexer/demultiplexer, DIP-16/SOIC-16/TSSOP-16"
+			(at 77.47 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFN" "Nexperia – 74HC4051D,652"
 			(at 77.47 129.54 0)
 			(effects
 				(font
@@ -12308,7 +12317,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SO-16_3.9x9.9mm_P1.27mm"
 			(at 113.03 139.7 0)
 			(effects
 				(font
@@ -12419,7 +12428,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 87.3252 35.56 0)
 			(effects
 				(font
@@ -12754,7 +12763,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal"
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 			(at 44.45 144.78 0)
 			(effects
 				(font
@@ -12823,7 +12832,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 170.18 27.94 0)
 			(effects
 				(font
