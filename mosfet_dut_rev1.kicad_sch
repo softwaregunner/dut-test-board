@@ -3722,6 +3722,156 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Switch:SW_Push"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Transistor_FET:AO3400A"
 			(pin_names
 				(offset 0)
@@ -4494,6 +4644,16 @@
 		)
 		(uuid "9b113f36-0aed-4dc8-a8b1-c4bff6e9666f")
 	)
+	(text "Current Sensor"
+		(exclude_from_sim no)
+		(at 164.592 124.968 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9fe6bd71-1a76-430b-bc92-423f09462168")
+	)
 	(text "J3-J6 user controlled\ninputs for DUTs"
 		(exclude_from_sim no)
 		(at 265.938 37.846 0)
@@ -4523,6 +4683,26 @@
 			)
 		)
 		(uuid "ec484be8-b291-4598-88e5-baf6084d1dff")
+	)
+	(text_box "Designator	Comment	Footprint	LCSC Part #	Assemble\nJ7	USB-C Receptacle TYPE-C 16P	Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal	C2765186	Yes\nU2	USB ESD Array USBLC6-2SC6	Package_TO_SOT_SMD:SOT-23-6	C2827654	Yes\nU3	LDO 3.3V ME6211 SOT-23-5	Package_TO_SOT_SMD:SOT-23-5	C82942	Yes\nU7	USB-UART CH340C SOIC-16	Package_SO:SOIC-16_3.9x9.9mm_P1.27mm	C7464026	Yes\nU6	ESP32-WROOM-32E-N4	RF_Module:ESP32-WROOM-32E	C701341	Yes\nU4	INA219 Current Sensor SOIC-8	Package_SO:SOIC-8_3.9x4.9mm_P1.27mm	C138706	Yes\nU5	74HC4051 Analog Mux SOIC-16	Package_SO:SO-16_3.9x9.9mm_P1.27mm	C9386	Yes\nU8	74HC4051 Analog Mux SOIC-16	Package_SO:SO-16_3.9x9.9mm_P1.27mm	C9386	Yes\nR12 R13 R14 R15	0.05R 1% 1W Shunt 2512	Resistor_SMD:R_2512_6332Metric	C7420008	Yes\nQ1 Q2 Q3 Q4	N-MOSFET AO3400A SOT-23	Package_TO_SOT_SMD:SOT-23	C20917	Yes\nR1 R2 R3 R4 R5 R6 R8 R9 R10 R11	5.1k 1% 0603	Resistor_SMD:R_0603_1608Metric	C23186	Yes\nC1 C2 C9	1uF 0603	Capacitor_SMD:C_0805_2012Metric	C28323	Yes\nC5 C6 C7 C8 C10	0.1uF 0603	Capacitor_SMD:C_0603_1608Metric	C14663	Yes\nC3 C4	470nF 0603	Capacitor_SMD:C_0603_1608Metric	C1623	Yes\nJ2	DC Input Screw Terminal 5.08mm	TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1	C474881	NO (DNP)\nJ3	DUT1 Screw Terminal 5.08mm	TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1	C474881	NO (DNP)\nJ4	DUT2 Screw Terminal 5.08mm	TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1	C474881	NO (DNP)\nJ5	DUT3 Screw Terminal 5.08mm	TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1	C474881	NO (DNP)\nJ6	DUT4 Screw Terminal 5.08mm	TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1	C474881	NO (DNP)\nH1 H2 H3 H4	Mounting Hole M3	MountingHole:MountingHole_3.2mm_M3_Pad		NO\nSW1	RESET Button	Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2	C720477	Yes"
+		(exclude_from_sim no)
+		(at 11.43 -59.69 0)
+		(size 166.37 52.07)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "34aa0979-85d5-42ed-846f-d94714cfd17b")
 	)
 	(junction
 		(at 101.6 41.91)
@@ -4589,6 +4769,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2f5b8e9b-e3df-41bd-84e6-e4dabcba15af")
+	)
+	(junction
+		(at 154.94 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2fa258b4-9f8e-4955-b717-7a409b3d70de")
 	)
 	(junction
 		(at 46.99 52.07)
@@ -4922,6 +5108,16 @@
 	)
 	(wire
 		(pts
+			(xy 207.01 41.91) (xy 196.85 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01664a4a-e8f8-4718-a566-49494b4947f8")
+	)
+	(wire
+		(pts
 			(xy 63.5 25.4) (xy 66.04 25.4)
 		)
 		(stroke
@@ -5062,7 +5258,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 95.25) (xy 133.35 88.9)
+			(xy 133.35 99.06) (xy 133.35 88.9)
 		)
 		(stroke
 			(width 0)
@@ -5082,7 +5278,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 95.25) (xy 143.51 88.9)
+			(xy 143.51 99.06) (xy 143.51 88.9)
 		)
 		(stroke
 			(width 0)
@@ -5112,6 +5308,16 @@
 	)
 	(wire
 		(pts
+			(xy 204.47 77.47) (xy 196.85 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17223c0c-5b40-48f8-a184-7801e550114a")
+	)
+	(wire
+		(pts
 			(xy 151.13 134.62) (xy 157.48 134.62)
 		)
 		(stroke
@@ -5132,7 +5338,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 39.37) (xy 166.37 39.37)
+			(xy 140.97 39.37) (xy 154.94 39.37)
 		)
 		(stroke
 			(width 0)
@@ -5319,6 +5525,16 @@
 			(type default)
 		)
 		(uuid "28427a40-63c5-4a5f-a846-58b6e8aab166")
+	)
+	(wire
+		(pts
+			(xy 204.47 74.93) (xy 196.85 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28b02229-8bdf-40e2-8c79-249125a395fb")
 	)
 	(wire
 		(pts
@@ -5709,6 +5925,16 @@
 			(type default)
 		)
 		(uuid "5d66f9ec-b18e-495b-ba64-64457db0d517")
+	)
+	(wire
+		(pts
+			(xy 207.01 46.99) (xy 196.85 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f695244-1631-4ab1-9b0d-539ae8e2f144")
 	)
 	(wire
 		(pts
@@ -6452,6 +6678,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 39.37) (xy 166.37 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6be6837-651c-4576-b77c-0c14f3c42e0c")
+	)
+	(wire
+		(pts
 			(xy 176.53 123.19) (xy 176.53 129.54)
 		)
 		(stroke
@@ -6662,7 +6898,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 39.37) (xy 204.47 39.37)
+			(xy 196.85 39.37) (xy 207.01 39.37)
 		)
 		(stroke
 			(width 0)
@@ -6719,6 +6955,16 @@
 			(type default)
 		)
 		(uuid "ec61b732-efae-4c73-81f8-55b67b4602c6")
+	)
+	(wire
+		(pts
+			(xy 154.94 49.53) (xy 154.94 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed234a6f-d29b-4563-9767-3483cd15f0c5")
 	)
 	(wire
 		(pts
@@ -6841,14 +7087,24 @@
 		(uuid "28f4fcdc-df6b-449b-a114-1fdcf6eaf222")
 	)
 	(label "I2C_SDA"
-		(at 196.85 74.93 0)
+		(at 204.47 74.93 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2a7b633f-e951-45bd-ae63-36ca24e793ca")
+	)
+	(label "UARTDRTS"
+		(at 143.51 99.06 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "2a7b633f-e951-45bd-ae63-36ca24e793ca")
+		(uuid "2b3e02ba-414d-4896-8974-6fb0b87ef56a")
 	)
 	(label "OUT2+"
 		(at 46.99 180.34 0)
@@ -6870,8 +7126,8 @@
 		)
 		(uuid "30deb5c0-2c8f-499c-93ab-bc0595135d7e")
 	)
-	(label "RESET"
-		(at 130.81 73.66 180)
+	(label "UARTDRTS"
+		(at 133.35 73.66 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6899,6 +7155,16 @@
 			(justify left bottom)
 		)
 		(uuid "3d1a12ff-a031-407a-98d1-827854914283")
+	)
+	(label "UARTDTX"
+		(at 207.01 41.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3f77b38f-90ae-434e-839b-7fd7beb256c2")
 	)
 	(label "SHUNT4_L"
 		(at 97.79 173.99 180)
@@ -7000,8 +7266,8 @@
 		)
 		(uuid "59b52164-264e-4c0a-a4ed-ab9c3ba487a7")
 	)
-	(label "BOOT"
-		(at 129.54 76.2 180)
+	(label "UARTDDTR"
+		(at 133.35 76.2 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7020,17 +7286,7 @@
 		)
 		(uuid "5fc4abc8-5fa9-4c58-8944-9f46010e95ea")
 	)
-	(label "RESET"
-		(at 160.02 39.37 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "60c04713-47a8-4b87-ba2f-38969095c4d3")
-	)
-	(label "ESP32 RX0"
+	(label "UARTDRX"
 		(at 134.62 55.88 180)
 		(effects
 			(font
@@ -7100,8 +7356,8 @@
 		)
 		(uuid "7a0c9458-9d69-4089-a27d-4746ed4e2453")
 	)
-	(label "BOOT"
-		(at 204.47 39.37 180)
+	(label "UARTDRTS"
+		(at 207.01 39.37 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7109,16 +7365,6 @@
 			(justify right bottom)
 		)
 		(uuid "7e3150b3-fdb8-45ab-9c18-aa3774fe08aa")
-	)
-	(label "ESP32 TX0"
-		(at 196.85 41.91 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "835ab129-ab13-4b25-80c2-32cd00e9c4c0")
 	)
 	(label "IN+"
 		(at 88.9 121.92 180)
@@ -7280,16 +7526,6 @@
 		)
 		(uuid "adb6ac50-2363-41e1-add7-6a5671fea1ba")
 	)
-	(label "ESP32 RX0"
-		(at 196.85 46.99 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b0e5bc85-64cf-48c6-a48d-1fb023876d84")
-	)
 	(label "M3_CTRL"
 		(at 196.85 69.85 0)
 		(effects
@@ -7321,17 +7557,17 @@
 		(uuid "b528cec8-40b2-43e0-b43f-4e3d0a326307")
 	)
 	(label "I2C_SCL"
-		(at 196.85 77.47 0)
+		(at 204.47 77.47 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "be1ed71e-d396-4725-9720-654fd509dfb1")
 	)
-	(label "BOOT"
-		(at 133.35 95.25 90)
+	(label "UARTDDTR"
+		(at 133.35 99.06 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7340,7 +7576,7 @@
 		)
 		(uuid "be6def01-e060-485c-bcaf-4a54bb8af164")
 	)
-	(label "ESP32 TX0"
+	(label "UARTDTX"
 		(at 134.62 58.42 180)
 		(effects
 			(font
@@ -7480,6 +7716,16 @@
 		)
 		(uuid "e1f1f5c4-0134-40c7-b52a-bece72e70324")
 	)
+	(label "UARTDRX"
+		(at 207.01 46.99 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e309cca8-c761-45a4-9ea4-ac5975ca0250")
+	)
 	(label "M3_CTRL"
 		(at 228.6 92.71 0)
 		(effects
@@ -7500,15 +7746,15 @@
 		)
 		(uuid "e6b1fc56-cda8-46f1-95d7-54ae2d154931")
 	)
-	(label "RESET"
-		(at 143.51 95.25 90)
+	(label "UARTDDTR"
+		(at 140.97 39.37 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "ea4fae0f-d964-42ab-9609-02ca62553fcb")
+		(uuid "f2c2fabc-e718-4964-b012-f97ba530848c")
 	)
 	(label "M4_CTRL"
 		(at 196.85 72.39 0)
@@ -9550,6 +9796,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 154.94 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5ff6bf28-75ab-4954-9db4-d64da7bcaf8e")
+		(property "Reference" "#PWR030"
+			(at 154.94 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 154.94 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 154.94 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 154.94 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d71bfb2a-39b0-4789-9314-baddd807919c")
+		)
+		(instances
+			(project "mosfet_dut_rev1"
+				(path "/deac0eab-811f-4736-96ff-e9a031bd3138"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 157.48 134.62 0)
 		(unit 1)
@@ -10795,6 +11108,76 @@
 			(project ""
 				(path "/deac0eab-811f-4736-96ff-e9a031bd3138"
 					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 154.94 44.45 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8c714833-150d-4a18-8ef7-3d2850cb9080")
+		(property "Reference" "SW1"
+			(at 156.21 43.1799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 156.21 45.7199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK"
+			(at 149.86 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.86 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 154.94 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "452e2ac4-8569-4d1c-a8aa-86d12c80c3be")
+		)
+		(pin "2"
+			(uuid "5751d4ca-580e-46be-89ac-7024c348b970")
+		)
+		(instances
+			(project ""
+				(path "/deac0eab-811f-4736-96ff-e9a031bd3138"
+					(reference "SW1")
 					(unit 1)
 				)
 			)

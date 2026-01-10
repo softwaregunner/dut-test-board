@@ -488,66 +488,68 @@
         "wire_width": 6
       },
       {
-        "clearance": 0.2,
+        "bus_width": 12,
         "name": "3V3",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
-        "via_diameter": 0.6,
-        "via_drill": 0.3
-      },
-      {
-        "clearance": 0.25,
-        "name": "POWER_DUT",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 1.0,
-        "via_diameter": 1.2,
-        "via_drill": 0.6
+        "schematic_color": "rgb(255, 63, 0)",
+        "wire_width": 6
       },
       {
-        "clearance": 0.2,
-        "name": "SIGNAL",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 4,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
-        "via_diameter": 0.6,
-        "via_drill": 0.3
-      },
-      {
-        "clearance": 0.2,
-        "name": "SWITCH",
+        "bus_width": 16,
+        "name": "DUT_POWER",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 3,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.6,
-        "via_diameter": 0.6,
-        "via_drill": 0.3
+        "schematic_color": "rgb(255, 0, 0)",
+        "wire_width": 8
       },
       {
-        "clearance": 0.15,
-        "diff_pair_gap": 0.15,
-        "diff_pair_width": 0.2,
-        "name": "USB",
+        "bus_width": 12,
+        "name": "GPIO",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
-        "via_diameter": 0.6,
-        "via_drill": 0.3
+        "priority": 4,
+        "schematic_color": "rgb(55, 243, 255)",
+        "wire_width": 6
       },
       {
-        "clearance": 0.2,
-        "name": "VBUS",
+        "bus_width": 12,
+        "name": "I2C",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 5,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.6,
-        "via_diameter": 0.6,
-        "via_drill": 0.3
+        "schematic_color": "rgb(255, 165, 31)",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "name": "SWITCH",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgb(91, 164, 255)",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "name": "UART",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 6,
+        "schematic_color": "rgb(255, 127, 255)",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "name": "USB",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 7,
+        "schematic_color": "rgb(0, 255, 0)",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "name": "VBUS",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgb(255, 31, 0)",
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -557,124 +559,44 @@
     "netclass_assignments": null,
     "netclass_patterns": [
       {
-        "netclass": "3V3",
-        "pattern": "+3V3"
+        "netclass": "USB",
+        "pattern": "/USB*"
+      },
+      {
+        "netclass": "UART",
+        "pattern": "/UART*"
+      },
+      {
+        "netclass": "I2C",
+        "pattern": "/I2C*"
+      },
+      {
+        "netclass": "GPIO",
+        "pattern": "/GPIO*"
+      },
+      {
+        "netclass": "DUT_POWER",
+        "pattern": "/POWER*"
+      },
+      {
+        "netclass": "DUT_POWER",
+        "pattern": "/OUT*"
+      },
+      {
+        "netclass": "SWITCH",
+        "pattern": "/M*"
+      },
+      {
+        "netclass": "SWITCH",
+        "pattern": "/IN*"
       },
       {
         "netclass": "VBUS",
         "pattern": "+VBUS"
       },
       {
-        "netclass": "SIGNAL",
-        "pattern": "/ESP32 RX0"
-      },
-      {
-        "netclass": "SIGNAL",
-        "pattern": "/ESP32 TX0"
-      },
-      {
-        "netclass": "USB",
-        "pattern": "/USBCC1"
-      },
-      {
-        "netclass": "USB",
-        "pattern": "/USBCC2"
-      },
-      {
-        "netclass": "POWER_DUT",
-        "pattern": "/POWER_SENSE+"
-      },
-      {
-        "netclass": "POWER_DUT",
-        "pattern": "/OUT1+"
-      },
-      {
-        "netclass": "SIGNAL",
-        "pattern": "/I2C_SDA"
-      },
-      {
-        "netclass": "SIGNAL",
-        "pattern": "/I2C_SCL"
-      },
-      {
-        "netclass": "SIGNAL",
-        "pattern": "/M1_CTRL"
-      },
-      {
-        "netclass": "SIGNAL",
-        "pattern": "/RESET"
-      },
-      {
-        "netclass": "SIGNAL",
-        "pattern": "/BOOT"
-      },
-      {
-        "netclass": "SIGNAL",
-        "pattern": "/M4_CTRL"
-      },
-      {
-        "netclass": "SIGNAL",
-        "pattern": "/M3_CTRL"
-      },
-      {
-        "netclass": "SIGNAL",
-        "pattern": "/M2_CTRL"
-      },
-      {
-        "netclass": "SWITCH",
-        "pattern": "/OUT1-"
-      },
-      {
-        "netclass": "SWITCH",
-        "pattern": "/OUT2-"
-      },
-      {
-        "netclass": "SWITCH",
-        "pattern": "/OUT3-"
-      },
-      {
-        "netclass": "SWITCH",
-        "pattern": "/OUT4-"
-      },
-      {
-        "netclass": "USB",
-        "pattern": "/USBD-"
-      },
-      {
-        "netclass": "USB",
-        "pattern": "/USBD+"
-      },
-      {
-        "netclass": "POWER_DUT",
-        "pattern": "/OUT2+"
-      },
-      {
-        "netclass": "POWER_DUT",
-        "pattern": "/OUT4+"
-      },
-      {
-        "netclass": "POWER_DUT",
-        "pattern": "/OUT3+"
-      },
-      {
-        "netclass": "POWER_DUT",
-        "pattern": "/POWER_BUS+"
-      },
-      {
-        "netclass": "POWER_DUT",
-        "pattern": "/OUT1-"
-      },
-      {
-        "netclass": "POWER_DUT",
-        "pattern": "/OUT2-"
-      },
-      {
-        "netclass": "POWER_DUT",
-        "pattern": "/OUT3-"
-      },
-      {
-        "netclass": "POWER_DUT",
-        "pattern": "/OUT4-"
+        "netclass": "3V3",
+        "pattern": "+3V3"
       }
     ]
   },
