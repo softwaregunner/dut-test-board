@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -63,12 +63,7 @@
           "width": 0.3
         }
       ],
-      "drc_exclusions": [
-        [
-          "lib_footprint_mismatch|99330000|86920000|29a50ad9-d09f-466e-9d98-afb90b1259ed|00000000-0000-0000-0000-000000000000",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -98,7 +93,7 @@
         "items_not_allowed": "error",
         "length_out_of_range": "error",
         "lib_footprint_issues": "warning",
-        "lib_footprint_mismatch": "warning",
+        "lib_footprint_mismatch": "ignore",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "mirrored_text_on_front_layer": "warning",
@@ -451,7 +446,7 @@
       "label_dangling": "error",
       "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
-      "lib_symbol_mismatch": "warning",
+      "lib_symbol_mismatch": "ignore",
       "missing_bidi_pin": "warning",
       "missing_input_pin": "warning",
       "missing_power_pin": "error",
@@ -523,6 +518,14 @@
         "wire_width": 8
       },
       {
+        "bus_width": 12,
+        "name": "ENABLE",
+        "pcb_color": "rgb(255, 127, 255)",
+        "priority": 7,
+        "schematic_color": "rgb(255, 127, 255)",
+        "wire_width": 6
+      },
+      {
         "name": "GND",
         "pcb_color": "rgb(101, 101, 101)",
         "priority": 0,
@@ -554,14 +557,6 @@
       },
       {
         "bus_width": 12,
-        "name": "UART",
-        "pcb_color": "rgb(255, 127, 255)",
-        "priority": 7,
-        "schematic_color": "rgb(255, 127, 255)",
-        "wire_width": 6
-      },
-      {
-        "bus_width": 12,
         "name": "USB",
         "pcb_color": "rgb(0, 255, 0)",
         "priority": 8,
@@ -588,8 +583,8 @@
         "pattern": "/USB*"
       },
       {
-        "netclass": "UART",
-        "pattern": "/UART*"
+        "netclass": "ENABLE",
+        "pattern": "/EN*"
       },
       {
         "netclass": "I2C",
@@ -605,7 +600,7 @@
       },
       {
         "netclass": "DUT_POWER",
-        "pattern": "/OUT*"
+        "pattern": "/DUT*"
       },
       {
         "netclass": "SWITCH",
@@ -664,7 +659,7 @@
           "group_by": false,
           "label": "Qty",
           "name": "${QUANTITY}",
-          "show": false
+          "show": true
         },
         {
           "group_by": true,
@@ -694,13 +689,13 @@
           "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from BOM",
           "name": "${EXCLUDE_FROM_BOM}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
@@ -737,11 +732,17 @@
           "label": "#",
           "name": "${ITEM_NUMBER}",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "include_excluded_from_bom": true,
+      "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
       "sort_field": "${QUANTITY}"
@@ -774,6 +775,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "space_save_all_events": true,
